@@ -38,7 +38,8 @@ That leaves a neat, pronounceable alphabet of **64 syllables**.
 | **r**  | ra | re | ri | ro | ru |
 | **y**  | ya | ye | —  | yo | yu |
 
-### Consonant set & ordering
+
+### Consonant set & ordering
 
 We chose **13 consonants** that phoneme‑frequency surveys (PHOIBLE, UPSID) list among the most widespread sounds.  
 They are grouped by *manner of articulation* and arranged roughly **front‑to‑back in the mouth**, making the sequence easy to remember:
@@ -55,14 +56,14 @@ They are grouped by *manner of articulation* and arranged roughly **front‑to�
 Sequence to loop over:  
 `p t k m n f s sh h ch l r y`
 
-### Vowel set & ordering
+### Vowel set & ordering
 
 We keep the **five “cardinal” vowels**—`a e i o u`—because they span the vowel space and appear, in some form, in the majority of the world’s phoneme inventories.  
 Ordering follows the common “front‑to‑back, low‑to‑high” classroom layout:
 
 `a e i o u`
 
-### Indexing rule
+### Indexing rule
 
 1. Walk the consonant list above.  
 2. Inside each consonant, walk the vowels `a e i o u`.  
@@ -70,7 +71,20 @@ Ordering follows the common “front‑to‑back, low‑to‑high” classroom l
 
 That assigns **pa → 0**, **pe → 1**, … all the way to **yu → 63**.
 
-## Status & roadmap
+### Example applications – random samples
+
+Below are random data blocks of various bit‑lengths encoded with Pepa64.  
+Syllables are grouped in sets of four for easier reading.
+
+| Use case               | Pepa64 sample                      |
+|------------------------|------------------------------------|
+| Random 32‑bit value    | su fe chi ko · ru cho              |
+| Random 48‑bit value    | pa mo ko ta · fa re sho ho         |
+| Random 24‑bit value    | cho ma yu che                      |
+| Random 20‑bit value    | ti la ko pa                        |
+| Random 60‑bit value    | ya mo ko ta · fa re sho ho · le sa |
+
+## Status & roadmap
 
 * Reference encoders/decoders (Python, JS) under construction.  
 * Drafting an **Informational Internet‑Draft** for an Independent‑stream RFC.  
@@ -78,13 +92,13 @@ That assigns **pa → 0**, **pe → 1**, … all the way to **yu → 63**.
 
 ---
 
-## License
+## License
 
 MIT License – see `LICENSE` for full text.
 
 ---
 
-### References
+## References
 
 * RFC 1751, RFC 1760, RFC 2289 – speakable key encodings  
 * FIPS 181 – pronounceable password generation  
