@@ -1,0 +1,13 @@
+.DS_Store
+node_modules/
+*.tsbuildinfo
+.env
+.env.local
+data/
+exports/
+*.wav
+*.webm
+*.m4a
+*.ogg
+!web/public/reference/*.wav
+.gstack/
